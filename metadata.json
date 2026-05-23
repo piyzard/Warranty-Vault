@@ -1,0 +1,6 @@
+{
+  "name": "Warranty Vault",
+  "description": "A smart warranty tracker and receipt bill vault powered by Gemini AI API and Room persistence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

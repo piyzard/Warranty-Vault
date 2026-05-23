@@ -11,7 +11,7 @@ android {
   compileSdk { version = release(36) { minorApiLevel = 1 } }
 
   defaultConfig {
-    applicationId = "com.aistudio.warrantyvault.fskepq"
+    applicationId = "com.piyush.warrantyvault"
     minSdk = 24
     targetSdk = 36
     versionCode = 1
@@ -38,8 +38,8 @@ android {
 
   buildTypes {
     release {
-      isCrunchPngs = false
-      isMinifyEnabled = false
+      isMinifyEnabled = true     // Change from false to true
+      isShrinkResources = true   // Add this line to strip unused resources
       proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
       signingConfig = signingConfigs.getByName("release")
     }
